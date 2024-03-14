@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import ChipData from "../../shared/Chip";
 
 const SkillList = (props: any) => {
-  const { skillList } = props;
+  const { skillList = [] } = props;
   return (
     <div
       style={{
