@@ -2,6 +2,7 @@ import Head from "next/head";
 import InfoHeader from "./components/core/InfoHeader";
 import Portfolio from "./components/core/Portfolio";
 import HireMe from "./components/core/HireMe";
+// import Contact from "./components/core/Contact";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <InfoHeader />
       <Portfolio />
       <HireMe />
+      {/* <Contact /> */}
     </>
   );
 }

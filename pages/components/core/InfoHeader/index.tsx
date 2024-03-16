@@ -1,5 +1,5 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Box, Button, Image, Text } from "@chakra-ui/react";
 import styles from "@/styles/InfoHeader.module.css";
 
 const InfoHeader = () => {
@@ -31,6 +31,11 @@ const InfoHeader = () => {
           Know more
         </Button>
       </div>
+      <Image
+        src="/Illustrations/hello.svg"
+        alt="hello"
+        className={styles.helloImage}
+      />
     </Box>
   );
 };

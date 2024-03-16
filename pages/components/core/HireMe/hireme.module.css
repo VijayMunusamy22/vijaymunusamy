@@ -1,0 +1,16 @@
+@media (max-width: 480px) {
+  .hiremeContainer {
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+  }
+  .hireMeBox {
+    padding: 12px;
+  }
+  .hiremeImage {
+    display: none;
+  }
+  .hiremeInfo {
+    margin: 0px;
+  }
+}

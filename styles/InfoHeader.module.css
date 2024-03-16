@@ -2,6 +2,26 @@
   .welcomeBox {
     background-image: none;
   }
+  .helloImage {
+    display: block !important;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcomeTextName {
+    line-height: 1.5;
+  }
+  .welcomeTextDescription {
+    font-size: 18px !important;
+  }
+  .userInformation {
+    line-height: 2;
+  }
+
+  .userInformationWrapper {
+    margin: 0px 12px !important;
+  }
 }
 
 .welcomeTextWrapper,
@@ -64,6 +84,10 @@
 .projectsHeader {
   font-size: 32px;
   color: #ffffff;
+}
+
+.helloImage {
+  display: none;
 }
 
 @keyframes typing {
