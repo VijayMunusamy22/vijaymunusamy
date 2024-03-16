@@ -62,21 +62,49 @@ const Header = () => {
         />
         <MenuList
           zIndex={5}
-          background="gray"
+          background="rgba(0,0,0,0.4)"
           width={300}
           alignItems="center"
           border="none"
         >
-          <MenuItem icon={<Home color="#229954" />} padding={10} fontSize={20}>
+          <MenuItem
+            icon={<Home color="#229954" />}
+            padding={10}
+            fontSize={20}
+            fontWeight={900}
+            color="#000000"
+            border="none"
+          >
             Home
           </MenuItem>
-          <MenuItem icon={<Rss color="#229954" />} padding={10} fontSize={20}>
+          <MenuItem
+            icon={<Rss color="#229954" />}
+            padding={10}
+            fontSize={20}
+            fontWeight={900}
+            color="#000000"
+            border="none"
+          >
             Blogs
           </MenuItem>
-          <MenuItem icon={<User color="#229954" />} padding={10} fontSize={20}>
+          <MenuItem
+            icon={<User color="#229954" />}
+            padding={10}
+            fontSize={20}
+            fontWeight={900}
+            color="#000000"
+            border="none"
+          >
             About
           </MenuItem>
-          <MenuItem icon={<Mail color="#229954" />} padding={10} fontSize={20}>
+          <MenuItem
+            icon={<Mail color="#229954" />}
+            padding={10}
+            fontSize={20}
+            fontWeight={900}
+            color="#000000"
+            border="none"
+          >
             Contact
           </MenuItem>
         </MenuList>

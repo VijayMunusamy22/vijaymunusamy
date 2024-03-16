@@ -1,39 +1,35 @@
-import {
-  Flex,
-  FormControl,
-  FormErrorMessage,
-  FormHelperText,
-  FormLabel,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Stack,
-} from "@chakra-ui/react";
-import { PhoneIcon } from "lucide-react";
-import { useState } from "react";
+import { useForm } from "react-hook-form";
+import styles from "./Contact.module.css";
 
 const Contact = () => {
-  const [input, setInput] = useState("");
+  const { register, handleSubmit } = useForm();
 
-  const handleInputChange = (e: any) => setInput(e.target.value);
-
-  const isError = input === "";
   return (
-    <Flex flexDirection="column">
-      <FormControl isInvalid={isError}>
-        <FormLabel>Email</FormLabel>
-        <Input type="email" value={input} onChange={handleInputChange} />
-        {isError && <FormErrorMessage>Email is required.</FormErrorMessage>}
-      </FormControl>
-      <Stack>
-        <InputGroup>
-          <InputLeftElement pointerEvents="none">
-            <PhoneIcon color="gray.300" />
-          </InputLeftElement>
-          <Input type="tel" placeholder="Phone number" />
-        </InputGroup>
-      </Stack>
-    </Flex>
+    <form className={styles.formContainer}>
+      <h4 className={styles.headerText}>Contact me</h4>
+      <input
+        {...register("fullName", { required: true })}
+        placeholder="Full name"
+        className={styles.formMailField}
+      />
+      <input
+        {...register("emailId", { required: true })}
+        placeholder="Email Id"
+        className={styles.formMailField}
+      />
+      <input
+        {...register("phoneNumber", { required: false })}
+        placeholder="Phone number"
+        className={styles.formMailField}
+      />
+      <textarea
+        {...register("message")}
+        placeholder="Few lines about the proposal"
+        className={styles.formMailField}
+        rows={6}
+      />
+      <input type="submit" className={styles.formButton} />
+    </form>
   );
 };
 

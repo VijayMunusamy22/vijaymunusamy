@@ -2,7 +2,8 @@ import Head from "next/head";
 import InfoHeader from "./components/core/InfoHeader";
 import Portfolio from "./components/core/Portfolio";
 import HireMe from "./components/core/HireMe";
-// import Contact from "./components/core/Contact";
+import Contact from "./components/core/Contact";
+import { Flex } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -18,8 +19,10 @@ export default function Home() {
       </Head>
       <InfoHeader />
       <Portfolio />
-      <HireMe />
-      {/* <Contact /> */}
+      <Flex flexWrap="wrap">
+        <HireMe />
+        <Contact />
+      </Flex>
     </>
   );
 }
