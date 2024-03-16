@@ -2,10 +2,11 @@
   .welcomeBox {
     background-image: none;
   }
-  .helloImage {
+  /* .helloImage {
     display: flex !important;
     height: 100%;
-  }
+    top: -10px;
+  } */
 }
 
 @media (max-width: 480px) {
